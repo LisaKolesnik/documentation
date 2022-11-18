@@ -1,0 +1,199 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  background-color: #F5F5F5;
+  color: #5E5E62;
+  width: 1200px;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 42px 41px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-item {
+  padding-right: 31px;
+}
+
+.nav-item:hover {
+  color: #DE5356;
+}
+
+.og {
+  font-weight: 700;
+}
+
+.koltron {
+  font-weight: 700;
+  color: #DE5356;
+}
+
+.search {
+  width: 145px;
+  height: 25px;
+  background: #F0E4E3;
+  border-radius: 7px;
+  border: none; 
+  padding-left: 14px;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+input:focus-visible {
+  outline: none;
+}
+
+.dropbtn {
+  background-color: transparent;
+  color: inherit;
+  border: none;
+  padding: 4px 9px;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 25px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 30px;
+  box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  padding: 6px 6px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #ddd;}
+
+.login {
+  font-family: inherit;
+  margin-left: 10px;
+  background-color: transparent;
+  color: inherit;
+  border: none;
+  cursor: pointer;
+  padding: 4px 9px;
+}
+
+.login:hover {
+  background-color: #ddd;
+}
+
+main {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #F4EDE7 0%, #F5F5F5 18.23%, #DAD9E1 100%);
+  border-radius: 30px 0px 0px 0px;
+  display: flex;
+  padding: 53px 41px;
+}
+
+.sidenav {
+  padding: 47px 70px 0 0px;
+}
+
+.sidenav-btn {
+  font-family: inherit;
+  color: inherit;
+  background-color: transparent;
+  display: grid;
+  cursor: pointer;
+  width: 231px;
+  text-align: left;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  padding-top: 15px;
+}
+
+.active, .sidenav-btn:hover {
+  font-weight: 700;
+  color: #DE5356;
+}
+
+.main {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.panel {
+  background-color: transparent;
+  display: none;
+  overflow: hidden;
+}
+
+.sidenav-item {
+  padding: 10px 6px 0;
+  font-weight: 400;
+  font-size: 7px;
+  line-height: 9px;
+}
+
+.sidenav-item:hover {
+  color: #DE5356;
+}
+
+.sections {
+  font-family: inherit;
+  color: inherit;
+  font-weight: 400;
+  font-size: 7px;
+  line-height: 9px;
+  padding-top: 10px;
+}
+
+.sections-item {
+  padding: 5px 14px 0;
+}
+
+.info {
+  width: 928px;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #F5EAEA 0%, #EBE9EB 40.63%, #DAD9E1 97.4%);
+  border-radius: 30px 30px 0px 0px;
+  padding: 42px 40px;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 26px;
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+.login-img {
+  padding-bottom: 40px;
+}
