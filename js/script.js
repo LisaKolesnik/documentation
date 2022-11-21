@@ -15,8 +15,17 @@ for (i = 0; i < acc.length; i++) {
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
     } else {
-      panel.style.maxHeight = panel.clientHeight + "170px";
+      panel.style.maxHeight = panel.clientHeight + "171px";
     }
   });
+
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  /* Set the width of the side navigation to 0 */
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
 }
 

@@ -12,6 +12,52 @@
 </head>
 <body>
   <header>
+    <div class="hamburger-menu">
+      <span onclick="openNav()">
+        <div class="open-btn"></div>
+        <div class="open-btn"></div>
+        <div class="open-btn"></div></span>
+      
+      <div id="mySidenav" class="menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="menu-item">
+          <button class="sidenav-btn main">Избранное</button>
+          <div class="panel">
+            <a class="sidenav-item" href="#">Сборка(запуск)</a>
+          </div>
+        </div>
+       
+        <div class="menu-item">
+          <button class="sidenav-btn main">Проект</button>
+          <div class="panel">
+            <button class="sidenav-btn">Koltron</button>
+            <div class="panel">
+              <a class="sidenav-item" href="#">Начало работы</a>
+              <a class="sidenav-item" href="#">Сборка(запуск)</a>
+              <a class="sidenav-item" href="#">Общая информация</a>
+              <button class="sidenav-btn sections">Разделы сайта</button>
+              <div class="panel">
+                <a class="sidenav-item sections-item" href="#">Футер</a>
+                <a class="sidenav-item sections-item" href="#">Header</a>
+              </div>
+            </div>
+            <button class="sidenav-btn">Next js</button>
+          </div>
+        </div>
+        
+        <div class="menu-item">
+        <button class="sidenav-btn main">Figma</button>
+        </div>
+        
+        <div class="menu-item">
+          <button class="sidenav-btn main">Служебные</button>
+        <div class="panel">
+          <button class="sidenav-btn">Jira</button>
+        </div>
+        </div>
+      </div>
+    </div>
+
     <nav class="topnav">
       <a href="#" class="nav-item og">OG</a>
       <a href="#" class="nav-item koltron">koltron</a>

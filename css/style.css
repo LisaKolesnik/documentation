@@ -21,6 +21,52 @@ header {
   padding: 42px 41px;
 }
 
+.hamburger-menu {
+  display: none;
+}
+
+.open-btn {
+  width: 24px;
+  height: 2px;
+  background-color: #5E5E62;
+  margin-bottom: 6px;
+  cursor: pointer;
+}
+
+.menu {
+  height: 100%; 
+  width: 0; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0; 
+  left: 0;
+  background: linear-gradient(180deg, #F5EAEA 0%, #EBE9EB 40.63%, #DAD9E1 97.4%);
+  overflow-x: hidden; 
+  padding-top: 60px; 
+  transition: 0.5s; 
+}
+
+.menu .closebtn {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.menu-item {
+  padding: 0 32px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+.topnav {
+  padding-top: 6px;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -206,4 +252,145 @@ h1 {
 
 .login-img {
   padding-bottom: 40px;
+}
+
+@media screen and (max-width: 780px) {
+  body {
+    font-size: 10px;
+    line-height: 15px;
+  }
+
+  .nav-item{
+    padding-right: 16px;
+  }
+
+  .dropbtn {
+    padding: 4px 6px;
+    font-size: 10px;
+    line-height: 15px;
+  }
+
+  .dropdown {
+    margin-left: 10px;
+  }
+
+  .dropdown-content {
+    min-width: 21px;
+  }
+
+  .dropdown-content a {
+    padding: 3px 3px;
+  }
+
+  .login {
+    padding: 4px 4px;
+    font-size: 10px;
+    line-height: 15px;
+  }
+
+  main {
+    padding: 24px 32px;
+  }
+
+  h1 {
+    font-size: 18px;
+    line-height: 20px;
+    padding-bottom: 15px;
+  }
+
+  .sidenav {
+    padding: 5px 32px 0 0;
+  }
+
+  .sidenav-btn {
+    width: auto;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .main {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .sections {
+    font-size: 7px;
+    line-height: 9px;
+  }
+
+  .info {
+    padding: 20px 32px;
+    margin-left: 150px;
+  }
+
+  img {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  body {
+    font-size: 8px;
+    line-height: 12px;
+  }
+
+  header {
+    padding: 24px 32px;
+}
+
+.topnav {
+  display: none;
+}
+
+  .search{
+    font-size: 8px;
+    line-height: 12px;
+  }
+
+  input[type=text] {
+    width: 70px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
+
+  input[type=text]:focus {
+    width: 130px;
+  }
+  
+  .sidenav {
+    display: none;
+  }
+
+  .info {
+    margin: 0;
+    width: 100%;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .info {
+    padding: 16px 20px;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  header {
+    padding: 20px 20px;
+  }
+
+  main {
+    padding: 16px 20px;
+  }
+
+  .login {
+    margin-left: 5px;
+  }
+
+  .dropdown {
+    margin-left: 5px;
+  }
 }
